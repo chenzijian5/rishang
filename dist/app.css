@@ -1,0 +1,233 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }   /*去掉input等聚焦时的蓝色边框*/
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","\5B8B\4F53";}
+select, input { vertical-align:middle;}
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0; vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+table { border-collapse:collapse; }
+body {
+    font:12px/150% Arial,Verdana,"\5B8B\4F53";
+    color:#666;
+    background:#fff
+}
+.clearfix:before,.clearfix:after {  /*清楚浮动*/
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+a {color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:100%;}  /*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+s,i,em{font-style:normal;text-decoration:none;}
+.col-red{color: #C81623!important;}
+
+/*公共类*/
+.w {  /*版心 提取 */
+    width: 1210px;margin:0 auto;
+}
+.fl {
+    float:left
+}
+.fr {
+    float:right
+}
+.al {
+    text-align:left
+}
+.ac {
+    text-align:center
+}
+.ar {
+    text-align:right
+}
+.hide {
+    display:none
+}
+.font12{ font-size: 12px;}
+.font14{ font-size: 14px;}
+.font16{ font-size: 16px;}header {
+  width: 100%;
+  position: relative;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f6f4+0,ebe8e2+100 */
+  background: #f7f6f4;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f7f6f4 0%, #ebe8e2 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f7f6f4 0%, #ebe8e2 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f7f6f4 0%, #ebe8e2 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f6f4', endColorstr='#ebe8e2', GradientType=0);
+  /* IE6-9 */
+  text-align: center;
+  line-height: 1.32rem;
+  color: #f1641e;
+}
+header h2 {
+  font-size: 0.48rem;
+}
+header .icon-saoyisao {
+  position: absolute;
+  right: 0.54rem;
+  top: 0;
+  font-size: 0.55rem;
+}
+.main {
+  display: block;
+  border-left: 0.19rem solid #ffc3c7;
+  height: 2.07rem;
+  line-height: 2.07rem;
+  position: relative;
+}
+.main .iconfont {
+  margin-left: 0.35rem;
+  font-size: 1.2rem;
+  color: #e98b03;
+}
+.main p {
+  display: inline;
+  color: #474747;
+  font-size: 0.4rem;
+  margin-left: 0.61rem;
+  position: absolute ;
+}
+.btns {
+  width: 100%;
+  height: 2.1rem;
+  line-height: 2.1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.btns a {
+  display: inline-block;
+  width: 4.59rem;
+  height: 1.32rem;
+  line-height: 1.32rem;
+  text-align: center;
+  border-radius: 0.1rem;
+  border: 0.03rem solid #ebebeb;
+  margin: 0.4rem 0;
+  box-shadow: 0rem 0.06rem 0rem #ebebeb;
+}
+.btns a .iconfont {
+  font-size: 0.57rem;
+  color: #f1641e;
+}
+.btns a span {
+  font-size: 0.44rem;
+  color: #474747;
+}
+.cline {
+  height: 0.62rem;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+}
+.cline i {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 96%;
+  height: 0.03rem;
+  background-color: #dedede;
+}
+.cline div {
+  width: 4.08rem;
+  height: 0.51rem;
+  text-align: center;
+  font-size: 0.4rem;
+  line-height: 0.51rem;
+  background-color: #fff;
+  position: absolute;
+  left: 30%;
+}
+.mainGoods .goods-list {
+  height: auto;
+}
+.mainGoods .goods-list li {
+  float: left;
+  width: 5.4rem;
+  height: 6.59rem;
+  text-align: center;
+}
+.mainGoods .goods-list li a {
+  display: block;
+}
+.mainGoods .goods-list li a .img-box {
+  width: 5.4rem;
+  height: 4.75rem;
+  text-align: center;
+  line-height: 4.75rem;
+}
+.mainGoods .goods-list li a .img-box img {
+  width: 3.7rem;
+  height: 4.2rem;
+  vertical-align: middle;
+}
+.mainGoods .goods-list li a .content-box .price .gPrice {
+  float: left;
+  margin-left: 0.48rem;
+  color: #f1641e;
+  font-size: 0.38rem;
+}
+.mainGoods .goods-list li a .content-box .price .gMount {
+  float: right;
+  margin-right: 0.49rem;
+  font-size: 0.38rem;
+}
+.mainGoods .goods-list li:last-child {
+  margin-bottom: 1.49rem;
+}
+footer {
+  position: fixed;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f5f3+0,ebe8e2+100 */
+  background: #f6f5f3;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f6f5f3 0%, #ebe8e2 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f6f5f3 0%, #ebe8e2 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f6f5f3 0%, #ebe8e2 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f5f3', endColorstr='#ebe8e2', GradientType=0);
+  /* IE6-9 */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.49rem;
+}
+footer ul {
+  display: flex;
+}
+footer ul li {
+  flex: 1;
+  text-align: center;
+}
+footer ul li a {
+  display: block;
+  height: 1.49rem;
+  text-align: center;
+  color: #474747;
+  padding-top: 0.02rem;
+  box-sizing: border-box;
+}
+footer ul li a.active {
+  color: #f1641e;
+}
+footer ul li a p {
+  line-height: 0.54rem;
+  font-size: 0.34rem;
+}
+footer ul li a .iconfont {
+  margin-top: 0.1rem;
+  line-height: 0.77rem;
+  font-size: 0.57rem;
+}
+
+/*# sourceMappingURL=app.css.map*/

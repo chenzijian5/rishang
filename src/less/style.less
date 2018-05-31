@@ -1,0 +1,610 @@
+@hh:1.32rem;
+@fh:1.49rem;
+
+.h_bg(){
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f6f4+0,ebe8e2+100 */
+    background: #f7f6f4; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f7f6f4 0%, #ebe8e2 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f7f6f4 0%,#ebe8e2 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f7f6f4 0%,#ebe8e2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f6f4', endColorstr='#ebe8e2',GradientType=0 ); /* IE6-9 */
+}
+.f_bg(){
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f5f3+0,ebe8e2+100 */
+    background: #f6f5f3; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f6f5f3 0%, #ebe8e2 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f6f5f3 0%,#ebe8e2 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f6f5f3 0%,#ebe8e2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f5f3', endColorstr='#ebe8e2',GradientType=0 ); /* IE6-9 */
+}
+// 顶部header组件
+header{
+    width: 100%;
+    position: fixed;
+    .h_bg();
+    top: 0;
+    left:0;
+    text-align: center;
+    line-height: @hh;
+    color: #f1641e;
+    z-index: 99;
+    
+    h2{
+        font-size: 0.48rem;
+    }
+    .icon-saoyisao,.icon-peizaizhuangche-xianxing,.icon-fenxiang,.upperSearch{
+        position: absolute;
+        right: 0.54rem;
+        top: 0;
+        font-size: 0.55rem;
+    }
+    .upperSearch{
+        font-size: 0.4rem;
+        letter-spacing: 0.1rem;
+        height: 0.95rem;
+        line-height: 0.48rem;
+        width: 1.06rem;
+        margin-top: 0.18rem;
+    }
+    .icon-fanhui{
+        position: absolute;
+        left: 0.54rem;
+        top: 0;
+        font-size: 0.55rem;
+    }
+}
+/////////////////////////////////////////////////////// 搜索框组件
+.searchinput{
+    width: 100%;
+    text-align: center;
+    height: 1.92rem;
+    line-height: 1.92rem;
+    position: relative;
+    margin-top: @hh;
+    input{
+        padding: 0 0.47rem;
+        left: 0.63rem;
+        top: 0.36rem;
+        border: 0;
+        outline: none;
+        background-color: #f1f1f1;
+        width: 7.17rem;
+        height: 1.2rem;
+        font-size: 0.46rem;
+        border-radius: 0.15rem 0 0 0.15rem;
+        position: absolute;
+        &::placeholder{
+            color: #c7c7c7;
+        }
+    }
+    button{
+        position: absolute;
+        border: 0;
+        outline: none;
+        width: 1.44rem;
+        height: 1.2rem;
+        background-color: #f1641e;
+        border-radius: 0 0.15rem 0.15rem 0;
+        top: 0.36rem;
+        right: 0.63rem;
+        i{
+            font-size: 0.58rem;
+            color: #fff;
+        }
+    }
+}
+.fhr{
+    margin: 0 2%;
+    width: 96%;
+    height: 0.02rem;
+}
+.nofriend{
+    margin-left: 0.47rem;
+    font-size: 0.4rem;
+    line-height: 2.11rem;
+}
+/////////////////////////////////////////////////////// Home页中间的main
+.main{
+    margin-top: @hh;
+    display: block;
+    // width: 100%;
+    border-left: 19px solid #ffc3c7;
+    height: 2.07rem;
+    line-height: 2.07rem;
+    position: relative;
+    .iconfont{
+        margin-left: 0.35rem;
+        font-size: 1.2rem;
+        color: #e98b03;
+    }
+    p{
+        display: inline;
+        color: #474747;
+        font-size: 0.4rem;
+        margin-left: 0.61rem;
+        position: absolute ;
+    }
+}
+///////////////////////////////////////////////////// 商品列表页
+.btns{
+    width: 100%;
+    height: 2.1rem;
+    line-height: 2.1rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top: @hh;
+    a{
+        // flex: 1;
+        display: inline-block;
+        width: 4.59rem;
+        height: 1.32rem;
+        line-height: 1.32rem;
+        text-align: center;
+        border-radius: 0.1rem;
+        border: 3px solid #ebebeb;
+        margin: 0.4rem 0;
+        box-shadow: 0rem 0.06rem 0rem #ebebeb;
+        .iconfont{
+            // margin-left: 1.42rem;
+            font-size: 0.57rem;
+            color: #f1641e;
+        }
+        span{
+            // margin-left: 0.25rem;
+            font-size: 0.44rem;
+            color: #474747;
+        }
+    }
+    // .search{
+    //     margin-left: 0.36rem;
+    // }
+}
+// 中间的长线
+.cline{
+    height: 0.62rem;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    i{
+        display: block;
+        position: absolute;
+        top: 50%;
+        width: 96%;
+        height: 0.03rem;
+        background-color: #dedede;
+        left:0.2rem;
+    }
+    div{
+        width: 4.08rem;
+        height: 0.51rem;
+        text-align: center;
+        font-size: 0.4rem;
+        line-height: 0.51rem;
+        background-color: #fff;
+        position: absolute;
+        left: 30%;
+        top: 0.06rem;
+    }
+}
+// 商品列表数据
+.mainGoods{
+    .goods-list{
+        height: auto;
+        li{
+            float: left;
+            width: 5.4rem; 
+            height: 6.59rem;
+            text-align: center;
+            a{
+                display: block;
+                .img-box{
+                    width: 5.4rem;
+                    height: 4.75rem;
+                    text-align: center;
+                    line-height: 4.75rem;
+                    img{
+                        width: 3.7rem;
+                        height: 4.2rem;
+                        vertical-align: middle;
+                    }
+                }
+                .content-box{
+                    line-height: 0.58rem;
+                    h3{
+                        font-size: 0.4rem;
+                        overflow: hidden;
+                        white-space:nowrap;
+                        text-overflow:ellipsis;
+                        margin-left: 0.45rem;   
+                    }
+                    .price{
+                        .gPrice{
+                            float: left;
+                            margin-left: 0.48rem;
+                            color: #f1641e;
+                            font-size: 0.38rem;
+                        }
+                        .gMount{
+                            float: right;
+                            margin-right: 0.49rem;
+                            font-size: 0.38rem;
+                        }
+                    }
+                }
+            }
+        }
+        li:last-child{
+            margin-bottom: @fh;
+        }
+    }
+    .iconcart{
+        position: fixed;
+        width: 1.38rem;
+        height: 1.38rem;
+        text-align: center;
+        line-height: 1.38rem;
+        background-color: #f1641e;
+        border-radius: 50%;
+        right: 0.33rem;
+        bottom: @fh;
+        .iconfont{
+            font-size: 0.71rem;
+            color: #fff;
+        }
+    }
+}
+//////////////////////////////////////////////// 更多页 未登录状态
+.loginState{
+    display: block;
+    width: 100%;
+    height: 3.96rem;
+    position: relative;
+    line-height: 3.96rem;
+    border-bottom: 1px solid #ebebeb;
+    margin-top: @hh;
+    .hbox{
+        height: 3.96rem;
+        position: absolute;
+        float: left;
+        margin-left: 0.94rem;
+        .icon-xingzhuang{
+            font-size: 2.07rem;
+            color: #f1641d;
+        }
+    }
+    span{
+        position: absolute;
+        left: 3.7rem;
+        font-size: 0.58rem;
+        color: #474747;
+    }
+    .icon-jiantouyou{
+        position: absolute;
+        font-size: 0.59rem;
+        color: #d5d5d5;
+        right: 0.62rem;
+    }
+}
+.wCube{
+    display: inline-block;
+    width: 100%;
+    height: 0.34rem;
+    border-top: 1px solid #ebebeb;
+    // border-bottom: 1px solid #ebebeb;
+}
+.comUl{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li{
+        width: 3.58rem;
+        height: 3.44rem;
+        float: left;
+        text-align: center;
+        // margin-top: -0.1rem;
+        a{
+            border: 1px solid #dedede;
+            width: 3.58rem;
+            height: 2.98rem;
+            display: block;
+            padding-top: 0.46rem;
+            .iconfont{
+                line-height: 1.47rem;
+                font-size: 1.16rem;
+                color: #f1641e;
+            }
+            div{
+                // display: block;
+                height: 0.39rem;
+                font-size: 0.39rem;
+                line-height: 0.69rem;
+                color: #474747;
+            }
+        }
+    }
+}
+/////////////////////////////////////////////////////// 权益页面
+.rightInfo{
+    width: 100%;
+    height: 5.37rem;
+    text-align: center;
+    margin-top: 1.55rem;
+    h2{
+        margin-top: 0.23rem;
+        font-size: 0.73rem;
+        line-height: 0.91rem;
+        font-weight: bold;
+        color: #f1641e;
+    }
+    h3{
+        font-size: 0.42rem;
+        font-weight: bold;
+        line-height: 0.6rem;
+        color: #474747;
+    }
+    .rightLine{
+        display: block;
+        font-size: 0.42rem;
+        line-height: 0.66rem;
+        text-decoration: underline;
+        margin-bottom: 0.52rem;
+    }
+    .powUl{
+        display: flex;
+        justify-content: space-around;
+        li{
+            float: left;
+            width: 3.07rem;
+            height: 1.96rem;
+            border: 2px solid #dedede;
+            p{
+                font-size: 0.4rem;
+                line-height: 0.86rem;
+                color: #857f7c;
+            }
+            span{
+                font-size: 0.4rem;
+                line-height: 0.72rem;
+                color: #f1641e;
+            }
+            .iconfont{
+                font-size: 0.72rem;
+                color: #f1641e;
+                line-height: 0.84rem;
+            }
+        }
+    }
+}
+// 获取积分
+.gmark{
+    font-size: 0.39rem;
+    line-height: 1.52rem;
+    background-color: #efeff4;
+    border-top: 2px solid #dedede;
+    border-bottom: 2px solid #dedede ;
+    color: #474747;
+    padding-left: 0.45rem;
+}
+.getMark{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li{
+        float: left;
+        width: 2.69rem;
+        height: 2.96rem;
+        text-align: center;
+        .iconfont{
+            margin-top: 0.3rem;
+            font-size: 1.09rem;
+            line-height: 1.45rem;
+        }
+        p{
+            font-size: 0.4rem;
+            line-height: 0.76rem;
+            color: #474747;
+        }
+    }
+}
+.umark{
+    font-size: 0.39rem;
+    line-height: 1.52rem;
+    background-color: #efeff4;
+    border-top: 2px solid #dedede;
+    border-bottom: 2px solid #dedede ;
+    color: #474747;
+    padding-left: 0.45rem;
+    clear: both;
+}
+.useMark{
+    display: flex;
+    justify-content: space-between;
+    li{
+        float: left;
+        width: 2.7rem;
+        height: 2.8rem;
+        text-align: center;
+        margin-bottom: @fh;
+        .iconfont{
+            margin-top: 0.3rem;
+            font-size: 1.09rem;
+            line-height: 1.45rem;
+        }
+        p{
+            font-size: 0.4rem;
+            line-height: 0.76rem;
+            color: #474747;
+        }
+    }
+}
+// 关系页
+.resUl{
+    height: 17.16rem;
+    margin-top: @hh;
+    li{
+        height: 1.81rem;
+        padding-left: 0.45rem;
+        .iconfont{
+            float: left;
+            line-height: 1.81rem;
+            font-size: 1.26rem;
+            margin-right: 0.32rem;
+        }
+        p{
+            float: left;
+            font-size: 0.4rem;
+            line-height: 1.81rem;
+            color: #474747;
+        }
+    }
+}
+///////////////////////////////////////////////轮播+商品列表
+.banner{
+    width: 100%;
+    height: 6.03rem;
+    overflow: hidden;
+    margin-bottom: 0.56rem;
+    margin-top: @hh;
+    position: relative;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .swiper-pagination{
+        position: absolute;
+    }
+}
+.hplist{
+    .goods-list{
+        li{
+            height: 1.88rem;
+            a{
+                display: block;
+                .img-box{
+                    float: right;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    margin-right: 0.42rem;
+                    margin-left: 0.49rem;
+                    overflow: hidden;
+                    img{
+                        width: 1.5rem;
+                        height: auto;
+                    }
+                }
+                .content-box{
+                    h3{
+                        font-size: 0.4rem;
+                        line-height: 0.64rem;
+                        margin-left: 0.45rem;
+                    }
+                    .price{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .iconcart{
+            display: none;
+        }
+    }
+}
+////////////////////////////////////////////////////////////////商品详情页
+.detailp{
+    padding: 0 0.45rem;
+    h3{
+        font-size: 0.46rem;
+        line-height: 0.9rem;
+        font-weight: bold;
+        color: #474747;
+    }
+    .pprice{
+        line-height: 1.08rem;
+        display: flex;
+        justify-content: space-between;
+        .dprice{
+            font-size: 0.44rem;
+            color: #f1641e;
+        }
+        .mount{
+            font-size: 0.4rem;
+        }
+    }
+    .ddetail{
+        font-size: 0.46rem;
+        line-height: 0.78rem;
+        span{
+            display: inline-block;
+            width: 100%;
+        }
+    }
+}
+//////////////////////购买按钮组件
+.buybtn{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    .adddel{
+        float: left;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        .iconfont{
+            font-size: 0.9rem;
+        }
+        .bmount{
+            font-size: 0.54rem;
+        }
+    }
+    .tobuy{
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+        background-color: #f1641e;
+        .iconfont{
+            color: #fff;
+            font-size: 0.82rem;
+        }
+    }
+}
+//////////////////////////////////////////////////////////////// 底部footer组件
+footer{
+    position: fixed;
+    .f_bg();
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: @fh;
+    ul{
+        display: flex;
+        li{
+            flex: 1;
+            text-align: center;
+            a{
+                display: block;
+                height: @fh;
+                text-align: center;
+                color: #474747;
+                padding-top:0.02rem;
+                box-sizing: border-box;
+                &.active{
+                    color: #f1641e;
+                }
+                p{
+                    line-height: 0.54rem;
+                    font-size: 0.34rem;
+                }
+                .iconfont{
+                    margin-top: 0.1rem;
+                    line-height: 0.77rem;
+                    font-size: 0.57rem;
+                }
+            }
+        }
+    }
+}
